@@ -1,0 +1,169 @@
+*{
+	margin: 0;
+	padding:0;
+}
+body{
+	background:#F1F1F1;
+}
+#lbt{
+	width: 100%;
+	height:328px;
+	background:url("../img/lunbt.jpg");
+	/*margin-top: 60px;*/
+}
+#lbt>div.lbt_k{
+	width: 1903px;
+	height: 328px;
+	position: relative;
+	z-index: -0;
+}
+#lbt>div.lbt_k>nav>div.bg,#lbt>div.lbt_k>nav>div.txt,#lbt>div.lbt_k>nav>div.tow{
+	width:300px;
+	height:315px;
+	position: absolute;
+	top:5px;
+	right: 450px;
+	background: #fff;
+	opacity: .4;
+}
+#lbt>div.lbt_k>nav>div.txt,#lbt>div.lbt_k>nav>div.tow{
+	background: none;
+	opacity: 1;
+    transition:all 1.5s linear;
+}
+#lbt>div.lbt_k>nav>div.tow>img{
+	width: 200px;
+	height: 200px;
+	position: absolute;
+	top: 40px;
+	left: 50px;
+}
+#lbt>div.lbt_k>nav>div.tow>h3{
+	position: absolute;
+	bottom:25px;
+	left:80px;
+}
+#lbt>div.lbt_k>nav>i.bgcolor{
+	display: block;
+	width:60px;
+	height:60px;
+	background-image:url("../img/wxx.jpg");
+	background-position:-200px -200px;
+	position: absolute;
+	right: 450px;
+	top:5px;
+	z-index: 10;
+	transition: all .5s linear;
+}
+.bgcol{
+	display: block;
+	width:60px;
+	height:60px;
+	background-image:url("../img/wxx.jpg");
+	background-position:-262px -260px;
+	position: absolute;
+	right: 450px;
+	top:5px;
+	z-index: 10;
+	transition: all .5s linear;
+}
+.none{
+	display: none;
+}
+#lbt>div.lbt_k>nav>div.txt>a,#lbt>div.lbt_k>nav>div.txt>span{
+	color:#fff;
+	font-size: 14px;
+	position: absolute;
+	bottom: 100px;
+	left: 140px;
+}
+#lbt>div.lbt_k>nav>div.txt>span{
+	left: 40px;
+}
+#lbt>div.lbt_k>nav>div.txt>a.noe{
+	display: block;
+	width:240px;
+	height: 47px;
+	border-radius: 5px;
+	background: #F4B31B;
+	position: absolute;
+	bottom: 140px;
+	left: 30px;
+	font-size: 24px;
+	text-align: center;
+	line-height: 47px;
+	text-decoration: none;
+}
+#nav{
+	width: 50px;
+	height: 250px;
+	font-size: 12px;
+	text-align: center;
+	position: fixed;
+	bottom: 100px;
+	right:100px;
+}
+#nav i{
+	display: block;
+	width: 52px;
+	height:32px;
+	background: url("../img/lxfs.png") no-repeat;
+	background-position-y: -12px;
+}
+#nav a.Group i{
+	background-position-y: -54px;
+}
+#nav a.Wechat i{
+	background-position-y: -96px;
+}
+#nav a.Income i{
+	background-position-y: -138px;
+}
+#nav a.top i{
+	background-position-y: -180px;
+}
+#nav a{
+	display: block;
+	color: #999999;
+	text-decoration: none;
+	background: #fff;
+}
+#nav a:hover{
+	background:#1BA3F1;
+	color: #fff;
+}
+#nav a:hover i{
+	background-position-x: -64px;
+}
+#hea+div{
+	height:35px;
+	width:100%;
+}
+#hea{
+	background: #fff;
+	position: fixed;
+	width: 100%;
+	top:0;
+	z-index: 100;
+}
+#hea_1{
+	width: 100%;
+	margin-top: 65px;
+}
+#scroll{
+	position: fixed;
+	left:0;
+	top:200px;
+    display:none;
+}
+#scroll button{
+	display: block;
+	width:50px;
+	height:50px;
+	font-size: 14px;
+	background:#5a6268;
+	color: #fff;
+}
+#scroll .bg_bgcolor{
+	 background:red;  !important;
+ }

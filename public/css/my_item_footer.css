@@ -1,0 +1,111 @@
+
+#bottom #ff{
+	width:100%;
+	background:#fff;
+}
+#bottom{
+	background:#F3F3F3;
+	margin-top: 30px;
+}
+#bottom header{
+	width:1000px;
+	background:#fff;
+	margin:0 auto;
+}
+#bottom header div.bj{
+	float:left;
+}
+#bottom ul{
+	list-style:none;
+}
+#bottom header div.bj ul.list_nav li{
+	float:left;
+}
+#bottom header div.bj ul.list:after{
+	content:"";
+	display:block;
+	clear:both;
+}
+#bottom a{
+	width:72px;
+	height:24px;
+	line-height:50px;
+	font-size:18px;
+	text-decoration:none;
+	color: #666666;
+}
+#bottom a:hover{
+	color:blue;
+}
+#bottom .list_nav li{
+	text-align:center;
+	width:165px;
+}
+#bottom .list_nav li ul{
+	display:none;
+}
+#bottom #yc_1,#bottom #yc_2,#bottom #yc_3,#bottom #yc_4,#bottom #yc_5,#bottom #yc_6{
+	position:relative;
+}
+#bottom #yc_1 ul,#bottom #yc_2 ul,#bottom #yc_3 ul,#bottom #yc_4 ul,#bottom #yc_5 ul,#bottom #yc_6 ul{
+	position:absolute;
+	top:40px;
+}
+#bottom #yc_1:hover ul,#bottom #yc_2:hover ul,#bottom #yc_3:hover ul,#bottom #yc_4:hover ul,#bottom #yc_5:hover ul,#bottom #yc_6:hover ul{
+	display:block;
+}
+#bottom #yc_1:hover li,#bottom #yc_2:hover li,#bottom #yc_3:hover li,#bottom #yc_4:hover li,#bottom #yc_5:hover li,#bottom #yc_6:hover li{
+	background:#fff;
+}
+#bottom #yc_1:hover ul a,#bottom #yc_2:hover ul a,#bottom #yc_3:hover ul a,#bottom #yc_4:hover ul a,#bottom #yc_5:hover ul a,#bottom #yc_6:hover ul a{
+	font-size:14px;
+	color:#666666;;
+}
+#bottom #yc_1 ul a:hover,#bottom #yc_2 ul a:hover,#bottom #yc_3 ul a:hover,#bottom #yc_4 ul a:hover,#bottom #yc_5 ul a:hover,#bottom #yc_6 ul a:hover{
+	display:block;
+	width:165px;
+	height:50px;
+	background:#F9F9F9;
+}
+#bottom div.tb span,#bottom div.tb a{
+	font-size:14px;
+	text-decoration:none;
+}
+#bottom div.tb a:hover{
+	color:blue;
+}
+#bottom div.tb{
+	text-align: center;
+}
+#bottom div.tb a{
+	padding-left: 20px;
+}
+#bottom .ft{
+	display:flex;
+	justify:space-around;
+}
+#bottom .ft img.img_1{
+	margin:10px 20px 30px 50px;
+}
+#bottom .ft img.img_2{
+	margin:10px 50px 30px 10px;
+}
+#bottom .ft div.ft_1{
+	margin-right:100px;
+}
+#bottom .ft_1 p.p_1{
+	margin-top:30px;
+}
+#bottom .ft_2 p{
+	margin-top:15px;
+}
+#bottom header p.fd{
+	clear:both;
+}
+#bottom section{
+	width:1000px;
+	margin:0 auto;
+}
+#bottom iframe{
+	height:160px;
+}

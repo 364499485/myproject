@@ -1,0 +1,16 @@
+#footer{
+	background:#323441;
+	height:143px;
+}
+#footer footer{
+	width:1000px;
+	margin:0 auto;
+}
+#footer span{
+	color:#66676D;
+}
+#footer div.ft_3{
+	text-align:center;
+	background:#323441;
+	padding-top:20px;
+}

@@ -1,0 +1,26 @@
+#Cooperation div h2{
+	font-weight:400;
+	margin-bottom: 30px;
+}
+#Cooperation{
+	margin-top: 50px;
+	background:#F3F3F3;
+}
+#Cooperation table{
+	width:1000px;
+	height:222px;
+	border-top:2px solid green;
+	background:#fff;
+}
+#Cooperation section{
+	width:1000px;
+	margin:0 auto;
+}
+#Cooperation table tr{
+	display:flex;
+	justify-content:space-around;
+	margin-top:30px;
+}
+#Cooperation td img.t1{
+	margin-left:6px;
+}

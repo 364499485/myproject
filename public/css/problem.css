@@ -1,0 +1,28 @@
+#problem>section{
+    width: 1000px;
+    margin: 0 auto;
+}
+#problem>section>div>div>div{
+    width: 1000px;
+    font-size: 20px;
+    line-height: 50px;
+    margin-bottom: 10px;
+}
+section>div>div>div.w{
+    height:50px;
+    background: #EEEEEE;
+    padding-left: 15px;
+}
+#problem section div p{
+    font-size: 14px;
+    padding-left: 15px;
+    padding-bottom: 20px;
+}
+#problem section div .color{
+    background-color: #005cbf;
+    border-radius:5px;
+    color: #fff;
+}
+#problem section div div  span{
+    display: block;
+}

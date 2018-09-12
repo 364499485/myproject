@@ -1,0 +1,117 @@
+
+#Dynamic{
+	background:#F3F3F3;
+	height:310px;
+}
+#Dynamic div.bj{
+	width:1000px;
+	margin:0 auto;
+}
+#Dynamic #left{
+	width:660px;
+}
+#Dynamic #right,#Dynamic #left{
+	height:330px;
+	background:#fff;
+	float:left;
+}
+#Dynamic #left h2{
+	font-weight:400;
+	float:left;
+}
+#Dynamic h3{
+	font-weight:400;	
+	margin-top:25px;
+	margin-bottom:15px;
+}
+#Dynamic h3 a:hover{
+	color:#FF4400;
+}
+#Dynamic #left span{
+	color:gray;
+	float:right;
+}
+#Dynamic div.header{
+	width:660px;
+}
+#Dynamic div.header,#Dynamic div.cs{
+	background:#F3F3F3;
+	line-height:40px;
+	height:40px;
+	padding-bottom:20px;
+}
+#Dynamic a{
+	color:#333333;
+	text-decoration:none;
+}
+#Dynamic div.tu{
+	border-top:2px solid #FFAB26;
+}
+#Dynamic div.tu img{
+	float:left;
+	margin:20px;
+}
+#Dynamic div.left_right{
+	float:left;
+}
+#Dynamic div.left_right p{
+	color:#999999;
+}
+#Dynamic nav{
+	width:660px;
+	height:85px;
+}
+#Dynamic nav ul li{
+	width:250px;
+	height:30px;
+	float:left;
+	margin-left:50px;
+}
+#Dynamic nav ul li a{
+	font-size:14px;
+}
+#Dynamic nav ul li a:hover,#right ul a:hover{
+	color:orange;
+}
+#Dynamic #right{
+	width:320px;	
+	margin-left:20px;
+	position: relative;
+}
+#Dynamic .list{
+	width:320px;
+	height:270px;
+	font-size:12px;
+	border-top:2px solid #FFAB26;
+}
+#Dynamic .list ul li{
+	width:332px;
+	height:30px;
+	line-height:30px;
+}
+#Dynamic .list ul{
+	margin-top:20px;
+	margin-left:30px;
+}
+#Dynamic #right div.cs{
+	width:320px;
+}
+#Dynamic #right h2{
+	font-weight:400;
+	float:left;
+}
+#Dynamic #right div.cs span{
+	float:right;
+}
+#fd{
+	clear:both;
+}
+#right h3{
+	font-size: 1.5rem;
+	margin: 0;
+}
+#right>div.cs>span>a{
+	 position: absolute;
+	top:0;
+	right: 5px;
+ }

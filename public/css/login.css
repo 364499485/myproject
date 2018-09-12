@@ -1,0 +1,111 @@
+#log div.login{
+	width:1200px;
+	height:530px;
+	margin: 0 auto;
+	margin-top: 60px;
+}
+#log a{
+	text-decoration:none;
+}
+#log div.left{
+	width:630px;
+	height:530px;
+	float:left;
+}
+#log div.right{
+	width:568px;
+	height:530px;
+	float:right;
+	background:#fff;
+}
+#log p.zc{
+	font-size:12px;
+	margin:20px 20px 40px 400px;
+}
+#log div.right h2,#log div.right h2 a.wx{
+	text-align:center;
+}
+#log div.right h2{
+	margin-bottom:35px;
+}
+#log div.right h2 span{
+	margin:0 20px;
+}
+#log .input{
+	width:265px;
+	height:40px;
+	margin:15px 0px 15px 10px;;
+}
+#log div.yz{
+	margin:0;
+	width:450px;
+	margin-left:7px;
+	margin-top: 13px;
+}
+#log div.yz:after{
+	content:"";
+	display:block;
+	clear:both;
+}
+#log div.yz span{
+	float:left;
+	line-height:40px;
+	margin-left:115px;
+}
+#log .input_yzm{
+	width:130px;
+	height:40px;
+	float:left;
+}
+#log div.srk{
+	text-align:center;
+}
+#log p.footer{
+	font-size:12px;
+	margin:15px 0;
+}
+#log p.footer span{
+	margin-right:70px;
+}
+#log div.dl a{
+	display:block;
+	width:265px;
+	height:40px;
+	border:1px solid #33AFFF;
+	margin-top:40px;
+	margin-left:190px;
+	line-height:40px;
+	font-size:20px;
+	color: #1BA3F1;
+}
+#log div.dl a:hover{
+	background:#33AFFF;
+	color:#fff;
+}
+#log span.id,#log span.psword{
+	font-size: 12px;
+	position: absolute;
+	top:60px;
+}
+#log div.srk p{
+	position: relative;
+}
+#log .show{
+	color: #1c7430;
+}
+#log .den{
+	color:red;
+}
+#log div.wx{
+	text-align: center;
+}
+#log div.wx img{
+	width: 250px;
+	height: 250px;
+}
+#log .col{
+	color:#CCCCCC;
+}
+.col2{
+	color: #1BA3F1;
+}

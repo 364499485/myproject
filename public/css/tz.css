@@ -1,0 +1,103 @@
+
+#Investment{
+	background:#F3F3F3;
+	padding-bottom: 20px;
+}
+#Investment section{
+	width:1000px;
+	margin:0 auto;
+}
+#Investment div h2{
+	margin-bottom:24px;
+	margin-top: 10px;
+	font-weight:normal;
+}
+#Investment table{
+	width:1000px;
+	height:292px;
+	border-top:2px solid yellow;
+}
+#Investment table td{
+	width:333px;
+	height:90px;
+	border-top:1px dotted gray;
+}
+#Investment table td div{
+	width:20px;
+	height:20px;
+	border-radius:50%;
+	text-align:center;
+	line-height:20px;
+	margin:0 20px 0 40px;
+	color:#fff;
+	background:#BABABA;
+}
+#Investment table td div,#Investment table td p{
+	float:left;
+}
+#Investment table{
+	background:#fff;
+}
+#Investment table tr.tr_1 td{
+	border:none;
+}
+#Investment table p span{
+	color:#BABABA;
+}
+#Investment div.d1{
+	background:#FFD33A;
+}
+#Investment div.d2{
+	background:#2BC6C4;
+}
+#Investment div.d3{
+	background:#FFAB26;
+}
+#Investment .footer{
+	margin-top:30px;
+	border-top:2px solid blue;
+	width:1000px;
+	height:50px;
+	line-height:50px;
+	background:#fff;
+}
+#Investment .footer p,#Investment .footer a,#Investment .footer p i{
+	float:left;
+}
+#Investment .footer p i{
+	display:block;
+	width:30px;
+	height:38px;
+	margin-left:10px;
+	margin-top:7px;
+}
+#Investment img:hover{
+	transform:scale(1.1);
+}
+#Investment .footer p{
+	color:#33AAFF
+}
+#Investment .footer p span{
+	color:#BAC0D1;
+	margin:0 280px 0 20px;
+}
+#Investment .footer a{
+	display:block;
+	color:gray;
+	border:1px solid #33AAFF;
+	width:140px;
+	height:25px;
+	line-height:21px;
+	text-align:center;
+	font-size:14px;
+	text-decoration:none;
+	border-radius:5px;
+	margin-top:12px;
+}
+#Investment .footer a:hover{
+	background:#33AAFF;
+	color:#fff;
+}
+#Investment section table tr td span{
+	margin-right: 5px;
+}
