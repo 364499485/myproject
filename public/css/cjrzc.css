@@ -70,21 +70,18 @@
 #ckzc footer p.sj{
 	margin-left:68px;
 }
-#ckzc #yz,#ckzc #yz_1{
+#ckzc #yz_1{
 	display:block;
 	border:1px solid black;
 	width:115px;
 	height:40px;
 	position:absolute;
 }
-#ckzc #yz{
-	bottom:190px;
-	left:298px;
-}
+
 #ckzc #yz_1{
 	border:1px solid #33AAFF;
 	bottom:130px;
-	left:398px;
+	left:400px;
 	text-align:center;
 	line-height:40px;
 	color:#33AAFF;
@@ -93,16 +90,16 @@
 	background:#33AAFF;
 	color:#fff;
 }
-#ckzc footer>p.bottom{
-	font-size:14px;
+#ckzc p.bottom{
+	font-size:12px;
 	width:500px;
 	height:20px;
 }
-#ckzc footer>p.bottom>input{
+#ckzc p.bottom>input{
 	float:left;
 	margin:-10px 5px 0 60px;
 }
-#ckzc #up{
+#ckzc #up,#ckzc #up1{
 	display:block;
 	width:345px;
 	height:40px;
@@ -110,5 +107,51 @@
 	margin:50px 0 0 160px;
 	text-align:center;
 	line-height:40px;
-	COLOR:#33AAFF;
+	color:#33AAFF;
+	background: #fff;
+}
+#ckzc span.no-ihpne{
+	font-size: 12px;
+}
+#ckzc #user{
+	padding-left: 150px;
+}
+#ckzc #user input{
+	width:330px;
+	height:40px;
+	margin: 30px 10px 0 10px;
+}
+#ckzc #user div button{
+	margin-left: 80px;
+}
+#ckzc #zcok{
+	text-align: center;
+}
+#ckzc #zcok p.ok{
+	margin: 0 auto;
+	font-size: 20px;
+	color: #2285CF;
+	border-bottom: 1px solid #6c757d;
+	line-height: 113px;
+	margin-top: -30px;
+}
+#zcok p.center{
+	height: 124px;
+	line-height: 124px;
+}
+#zcok p.center a{
+	color: #1BA3F1;
+}
+#zcok p.last img{
+	margin-left: 75px;
+}
+#zcok p.last a{
+	display: block;
+	width: 100px;
+	height: 40px;
+	background: #FF5F1A;
+	color: #fff;
+	line-height: 40px;
+	margin: 0 auto;
+	border-radius:5px;
 }

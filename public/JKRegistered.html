@@ -35,25 +35,51 @@
 			</section>
 			<footer>
 				<p>
-					<span>手机号：</span><input type="text" placeholder="请珊输入手机号" class="p1">
+					<span>手机号：</span><input autofocus="autofocus" type="text" placeholder="请珊输入手机号" class="p1">
+					<span class="no-ihpne ip">请输入您的手机号</span>
 				</p>
 				<p>
-					<span>验证码：</span><input type="text" placeholder="请输入验证码" class="p2"><p id="yz"></p>
+					<span>验证码：</span><input type="text" placeholder="请输入验证码" class="p2">
+					<canvas width="115px" height="40px" style="border: 1px solid black;margin-bottom: -16px;margin-left: 8px"></canvas>
+					<span class="no-ihpne yzcode none">验证码输入错误</span>
 				</p>
 				<p class="sj">
 					<span>手机验证码：</span><input type="text" placeholder="手机验证码" class="p3"><a href="#" id="yz_1">发送验证码</a>
-				</p>	
+					<span class="no-ihpne" style="margin-left: 128px">验证失败</span>
+				</p>
 				<p class="bottom">
-					<input type="radio">我已阅读并同意 <a href="#">《投促金融注册协议》</a>
+					<input type="checkbox">我已阅读并同意 <a href="#">《投促金融注册协议》</a>
+					<span class="none Clause" style="color: red">请先确认条款！！！</span>
 				</p>
 				<div>
-					<a href="#" id="up">下一步</a>
+					<button id="up">下一步</button>
 				</div>
 			</footer>
+			<div id="user" class="none">
+				<span>用户姓名:</span> <input class="uname" type="text" placeholder="请输入用户名"><span></span><br>
+				<span>用户密码:</span> <input class="upwd" type="password" placeholder="请输入密码"><psan></psan><br>
+				<span>确认密码:</span> <input class="upwd2" type="password" placeholder="请再次输入用户密码"><span></span><br>
+				<span>推荐的人:</span> <input type="text" placeholder="如有,请输入推荐人您的人的手机号或识别码">
+				<div>
+					<button id="up1">下一步</button>
+				</div>
+			</div>
+			<div id="zcok"class="none">
+				<p style="width: 500px;height: 133px" class="ok">
+					<span>3333</span>,恭喜你注册成功！<span style="color: #F6A81B;font-size: 24px">618元</span>已到账
+				</p>
+				<p class="center">开通第三方<a href="#">资金存管账户</a>,保证你的资金安全</p>
+				<p class="last">
+					<img src="img/logo-hk.png" alt=""><br>
+					<a href="#">安全设置</a>
+				</p>
+			</div>
 		</div>
 	<div id="bot"></div>
 	<script src="js/jquery-3.2.1.js"></script>
+	<script src="js/VerCode.js"></script>
 	<script src="js/registered.js"></script>
+	<script src="js/head.js"></script>
 	</body>	
 </html>
 

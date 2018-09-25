@@ -1,23 +1,7 @@
 //获取每个单独页面
 $(function(){
     $.ajax({
-        url:"http://localhost:3000/my_item_nav.html",
-        type:"get"
-    })
-        .then(res=>{
-            $("#hea").html(res);
-        })
-
-    $.ajax({
-        url:"http://localhost:3000/my_item_nav1.html",
-        type:"get"
-    })
-        .then(res=>{
-            $("#hea_1").html(res);
-        })
-
-    $.ajax({
-        url:"http://localhost:3000/gongg.html",
+        url:"http://localhost:3000/Publicity.html",
         type:"get"
     })
         .then(res=>{
@@ -25,46 +9,39 @@ $(function(){
         })
 
     $.ajax({
-        url:"http://localhost:3000/gyl.html",
+        url:"http://localhost:3000/Supply.html",
         type:"get"
     })
         .then(res=>{
             $("#gyl").html(res);
         })
 	$.ajax({
-		url:"http://localhost:3000/zxl.html",
+		url:"http://localhost:3000/Creporting.html",
 		type:"get"
 	})
 		.then(res=>{
 			$("#zxl").html(res);
 		})
 	$.ajax({
-		url:"http://localhost:3000/tz.html",
+		url:"http://localhost:3000/tzList.html",
 		type:"get"
 	})
 		.then(res=>{
 			$("#Investment").html(res);
 		})
     $.ajax({
-        url:"http://localhost:3000/gsdt.html",
+        url:"http://localhost:3000/Dynamic.html",
         type:"get"
     })
         .then(res=>{
             $("#Dynamic").html(res)
         })
     $.ajax({
-        url:"http://localhost:3000/hzjg.html",
+        url:"http://localhost:3000/Cooperation.html",
         type:"get"
     })
         .then(res=>{
             $("#Cooperation").html(res)
-        })
-    $.ajax({
-        url:"http://localhost:3000/footer.html",
-        type:"get"
-    })
-        .then(res=>{
-            $("#bot").html(res)
         })
 })
 

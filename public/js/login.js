@@ -1,33 +1,10 @@
-//请求页头
-$.ajax({
-    url:"http://localhost:3000/my_item_nav.html",
-    type:"get"
-})
-    .then(res=>{
-        $("#hea").html(res);
-    })
-
-$.ajax({
-    url:"http://localhost:3000/my_item_nav1.html",
-    type:"get"
-})
-    .then(res=>{
-        $("#hea_1").html(res);
-    })
-
-$.ajax({
-    url:"http://localhost:3000/footer.html",
-    type:"get"
-})
-    .then(res=>{
-        $("#bot").html(res)
-    });
 
 //设置输入框提示
 $("#log").on("focus","input",function () {
     input=$(this);
     input.nextAll("span").removeClass("none").addClass("show");
 });
+
 $("#log").on("blur","input",function () {
     input=$(this);
     var value = input.val();
@@ -41,53 +18,11 @@ $("#log").on("blur","input",function () {
         input.nextAll("span").html("格式不正确！！").addClass("den")
     }
 });
+
 //设置验证码
-function fn() {
-    var strs = "";     //创建一个变量，接收canvas中的值
-    function color() {
-        var r = parseInt(Math.random() * 255);
-        var g = parseInt(Math.random() * 255);
-        var b = parseInt(Math.random() * 255);
-        return `rgb(${r},${g},${b})`;
-    }
-
-    var cvs = document.querySelector("canvas");
-    //设置点击事件，点击时调用fn函数，切换不同的验证码
-    cvs.onclick=function () {
-       str =  fn();
-    };
-    var ctx = cvs.getContext("2d");
-    ctx.fillStyle = color();
-    ctx.fillRect(0, 0, 115, 40);
-    var pool = "QWERTYUIOPLKJHGFDSAZXCVBNM0123456789qwertyuioplkjhgfdsazxcvbnm";
-    for (var i = 0; i < 4; i++) {
-        var num = pool[rn(0, pool.length)];
-        //绘制一个字符
-        ctx.textBaseline = "top";   //设置基线
-        ctx.fillStyle = color();  //随机填充文字颜色
-        ctx.font = "23px SimHei";   //字体大小
-        ctx.fillText(num, i * 25 + 5, 5);  //绘制字符
-        strs+=num;
-    }
-
-//返回一个范围内的速记整数
-    function rn(min, max) {
-        var n = Math.random() * (max - min) + min;
-        return Math.floor(n)
-    }
-
-//干扰线
-    for (var i = 0; i <= 8; i++) {
-        ctx.strokeStyle = color();
-        ctx.beginPath();
-        ctx.moveTo(rn(0, 115), rn(0, 40));
-        ctx.lineTo(rn(0, 115), rn(0, 40));
-        ctx.stroke();
-    }
-    return strs;
-}
-var str=fn();
-//设置登录
+var cv = document.querySelector("canvas");
+var str = fn(cv);
+//设置登录切换
 $("#log h2").on("click","a",function () {
    var  a=$(this);
    // console.log(a.html());
@@ -104,33 +39,59 @@ $("#log h2").on("click","a",function () {
    }
 });
 //登录
-$("#l").on("click",function(e){
-    e.preventDefault();
-    var id=$("span.id").html();
-    var pw=$("span.psword").html();
-    var yz=$("input.input_yzm").val().toLocaleUpperCase();
-    var st = str.toLocaleUpperCase();
-    if(yz!=st){
-        $("a.yzCode").removeClass("none");
-        fn();
-    }else{
-        $("a.yzCode").addClass("none");
-        if(id=="ok"&&pw=="ok"){
-            // console.log(12345)
-            var uname=$("input.uname").val();
-            var upwd=$("input.upwd").val();
-            $.ajax({
-                url:`http://localhost:3000/login?uname=${uname}&upwd=${upwd}`,
-                type:"GET",
-            }).then(result=>{
-                // console.log(result.res[0].uname)
-                if(result.code==0){
-                    alert(result.res)
-                }else if(result.code==1){
-                    alert("登录成功,转跳到主页")
-                    location.href="http://localhost:3000/index.html";
-                }
-            })
+    $("#l").on("click", function (e) {
+        e.preventDefault();
+        var id = $("span.id").html();
+        var pw = $("span.psword").html();
+        var yz = $("input.input_yzm").val().toLocaleUpperCase();
+        var st = str.toLocaleUpperCase();
+        if (yz != st) {
+            $("a.yzCode").removeClass("none");
+            fn();
+        } else {
+            $("a.yzCode").addClass("none");
+            if (id == "ok" && pw == "ok") {
+                // console.log(12345)
+                var uname = $("input.uname").val();
+                var upwd = $("input.upwd").val();
+                $.ajax({
+                    url: `http://localhost:3000/login?uname=${uname}&upwd=${upwd}`,
+                    type: "GET",
+                }).then(result => {
+                    // console.log(result.res[0].uname);
+                    if (result.code == 0) {
+                        alert(result.res)
+                    } else if (result.code == 1) {
+                        //记住密码
+                        var pinput = $("p.footer input");
+                        if (pinput.is(':checked')) {
+                            localStorage.setItem("id", result.res[0].uname);
+                            localStorage.setItem("upwd", result.res[0].upwd);
+                        } else {
+                            localStorage.clear("id");
+                            localStorage.clear("upwd");
+                        }
+                        alert("登录成功,转跳到主页");
+                        location.href = "http://localhost:3000/index.html";
+                    }
+                })
+            }
         }
+    });
+//记住密码后自动加载密码框
+function Rpassword() {
+    var zh = $("input.uname");
+    var pw = $("input.upwd");
+    var id = localStorage.getItem("id");
+    var upwd = localStorage.getItem("upwd");
+    zh.val(id);
+    pw.val(upwd);
+    if(pw.val().length>5){
+        $("span.id").text("ok").removeClass("den").removeClass("none");
+        $("span.psword").text("ok").removeClass("den").removeClass("none");
+        $("input.jzpsword").prop("checked",true); //标准写法，推荐！
     }
-});
+}
+sessionStorage.clear("code");
+Rpassword();
+

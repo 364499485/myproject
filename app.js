@@ -11,7 +11,10 @@ const bodyParser = require('body-parser');
 /*引入路由模块*/
 var notice=require("./routes/notice");
 var tzmoney= require("./routes/tzmoney");
-var login=require("./routes/login")
+var login=require("./routes/login");
+var user =require("./routes/user");
+var Investment=require("./routes/Investment");
+var table=require("./routes/table");
 
 //使用body-parser中间件
 app.use(bodyParser.urlencoded({extended:false}));
@@ -28,6 +31,9 @@ app.use(session({
 app.use("/notice",notice);
 app.use("/tzmoney",tzmoney);
 app.use("/login",login);
+app.use("/user",user);
+app.use("/Investment",Investment);
+app.use("/table",table);
 
 
 

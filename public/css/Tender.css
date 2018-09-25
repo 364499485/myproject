@@ -1,0 +1,285 @@
+#Tenter div.bg{
+    background: url("../img/project-detail.jpg") no-repeat 100% -525px;
+    padding-bottom:30px ;
+}
+#Tenter #hd{
+    width: 1000px;
+    height:280px;
+    background:#fff;
+    margin: 0 auto;
+    position: relative;
+    border: 1px solid #ccc;
+}
+#Tenter div.bg>p.nav{
+    font-size:14px;
+    width: 1000px;
+    margin: 10px auto 20px;
+}
+#Tenter div.bg>p.nav>a{
+    color:#33AFFF;
+}
+#Tenter #hd>span:first-child{
+    float: left;
+    width: 30px;
+    height:90px;
+    background: #1BA3F1;
+    color: #fff;
+    text-align: center;
+}
+#Tenter #hd>span:first-child + h2{
+    font-weight: 400;
+    float: left;
+    margin: 10px 20px;
+}
+#Tenter #hd>button.repayment{
+    float: right;
+    width: 80px;
+    height: 30px;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+#Tenter #hd a.liu{
+    position: absolute;
+    left:50px;
+    top:50px;
+    width: 100px;
+    height:25px;
+    margin-bottom: 30px;
+    background: #d39e00;
+    color: #fff;
+    text-align: center;
+    line-height: 25px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+#Tenter #hd div.IRate{
+    width: 650px;
+    height: 95px;
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+}
+
+#Tenter #hd div.IRate div{
+    margin-top: 30px;
+}
+
+#Tenter #hd div.IRate h2{
+    font-weight: 400;
+    color: #1BA3F1;
+}
+#Tenter #hd div.IRate div.IRate_item1{
+    margin-left: -300px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+#Tenter #hd div.IRate div.IRate_item1>h2:first-child{
+   margin-left: 180px;
+    margin-right: 50px;
+}
+#Tenter #hd div.IRate div.IRate_item1 h2.item_h2{
+    margin-right: 65px;
+}
+#Tenter #hd div.IRate .IRate_item2{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    font-size: 14px;
+}
+#Tenter #hd div.IRate .IRate_item2>span:first-child{
+    margin-right: 60px;
+}
+#hd div.IRate .IRate_item2 span{
+    margin-left: 50px;
+}
+#Tenter #hd div.IRate .IRate_item2 span.item_span{
+    margin-left: 80px;
+    margin-right: 90px;
+}
+#Tenter #hd div.Percentage{
+    float: right;
+}
+#Tenter #hd hr{
+    width: 600px;
+    margin-left: 20px;
+    margin-top: 13px;
+}
+#Tenter #hd div.Percentage div{
+    width: 100px;
+    height: 100px;
+    border: 10px solid #1BA3F1;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 100px;
+    font-size: 24px;
+    color: #1BA3F1;
+    position: absolute;
+    top:20px;
+    right: 140px;
+}
+#Tenter #hd div.Percentage span{
+   font-size: 14px;
+    margin-right: 115px;
+}
+#Tenter #hd div.Percentage>button{
+    width: 200px;
+    height:45px;
+    border: 1px solid #0c5460;
+    position: absolute;
+    bottom: 40px;
+    right: 87px;
+    background: #fff;
+}
+#Tenter #hd div.Percentage>button:hover{
+    background: #1BA3F1;
+    color: #fff;
+}
+#Tenter #hd p.date{
+    margin-top: 30px;
+    font-size: 14px;
+    margin-left: 20px;
+}
+#Tenter #hd p.date>span:first-child{
+    margin-right: 200px;
+}
+#Tenter #hd>button{
+    width: 120px;
+    height: 30px;
+    border:1px solid #ccc;
+    border-radius: 30px 30px 0px 0px;
+    position: absolute;
+    bottom: 0px;
+    right: 10px;
+}
+#Tenter div.bg div.Record{
+    width: 1000px;
+    margin: 0 auto;
+    background: #fff;
+}
+#Tenter div.bg div.Record>div{
+    float: left;
+    margin-left: 20px;
+}
+#Tenter div.bg div.Record:after{
+    content: "";
+    clear: both;
+    display: block;
+}
+#Tenter div.bg div.Record>div>div{
+    width: 300px;
+    height: 80px;
+    border: 1px solid #999999;
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    margin-top: 10px;
+    padding-left: 10px;
+    margin-bottom: 10px;
+}
+#Tenter div.bg div.Record>div>div>div>div.num{
+    display: block;
+    width: 50px;
+    height: 50px;
+    font-size: 32px;
+    text-align: center;
+    line-height: 50px;
+    color: #fff;
+    background: #1265B3;
+    border-radius: 50%;
+    margin-bottom: 5px;
+    margin-right: 10px;
+}
+#Tenter div.bg div.Record div.right{
+    margin-left: 20px;
+}
+#Tenter div.bg div.Record div.right p.header{
+   margin-top: 10px;
+    margin-bottom: 20px;
+}
+#Tenter div.bg>p.No{
+    width: 1000px;
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 40px;
+    background: #fff;
+    margin: 0 auto;
+}
+#Tenter div.info{
+    width: 1000px;
+    height:540px;
+    background: #fff;
+    margin: 0 auto;
+}
+#Tenter div.info h2{
+    font-weight: 400;
+    margin-left: 20px;
+    padding-top: 20px;
+    margin-bottom: 10px;
+}
+#Tenter div.info>span{
+    margin-left: 20px;
+    font-size: 14px;
+}
+#Tenter div.info>div{
+    margin-top: 20px;
+    margin-left: 20px;
+}
+#Tenter div.info ul{
+    list-style: none;
+    padding-left: 20px;
+    border-left: 2px solid #ddd;
+
+}
+#Tenter div.info ul li{
+    height:74px;
+    position: relative;
+}
+#Tenter div.info ul li:after{
+    content: "";
+    display: block;
+    width: 5px;
+    height: 5px;
+    background: #1BA3F1;
+    border-radius: 50%;
+    position: absolute;
+    left:-24px;
+    top:0;
+}
+#Tenter div.info ul li p.color{
+    color: #999999;
+    margin-top: 10px;
+}
+#Tenter div.info>div.title{
+    margin-left: 60px;
+}
+#Tenter div.info>div.title a{
+    display: block;
+    width: 192px;
+    height: 46px;
+    text-decoration: none;
+    float: left;
+    color: #999999;
+    text-align: center;
+    line-height: 46px;
+}
+#Tenter div.info>div.title a:hover{
+    background: #1BA3F1;
+    color: #fff;
+}
+#Tenter #limit{
+    width: 300px;
+    height:100px;
+    background: #999999;
+    line-height: 50px;
+    position: fixed;
+    top:50%;
+    left:40%;
+    text-align: center;
+}
+#Tenter #limit button{
+    width: 70px;
+    height: 30px;
+
+}

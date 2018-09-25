@@ -64,8 +64,8 @@
 	font-size:12px;
 	margin:15px 0;
 }
-#log p.footer span{
-	margin-right:70px;
+#log p.footer a{
+	margin-left:70px;
 }
 #log div.dl a{
 	display:block;
